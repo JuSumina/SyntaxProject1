@@ -28,5 +28,6 @@ public class Task3 {
         System.out.println("The sum of even numbers is " + sumEven);
         System.out.println("The sum of odd numbers is " + sumOdd);
 
+
     }
 }

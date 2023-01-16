@@ -12,23 +12,25 @@ public class Task4 {
         System.out.println("Please enter an item you would like to buy");
         String itemToBuy=scanner.nextLine();
         System.out.println("Please enter the price of this item");
-        int itemPrice=scanner.nextInt();
+        double itemPrice=scanner.nextDouble();
 
-        int money;
-        int sum=0;
+        double money;
+        double sum=0;
 
 
         do {
             System.out.println("Please enter the amount of money you can pay right now");
-            money=scanner.nextInt();
+            money=scanner.nextDouble();
             sum= sum +money;
             if (sum<itemPrice) {
                 System.out.println("You still owe " + (itemPrice - sum));
             } else {
-                System.out.println("Your "+itemToBuy+ "is paid in full. Thank you for shopping");
+                System.out.println("Your change is " + (sum - itemPrice));
+                System.out.println("Your "+itemToBuy+ " is paid in full. Thank you for shopping");
+                break;
             }
         } while (money<itemPrice);
-        ++money;
+        money++;
 
     }
 }
