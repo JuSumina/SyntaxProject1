@@ -1,13 +1,13 @@
-package homework6;
+package class13;
 
-public class Task6 {
+public class Loops7 {
 
     public static void main(String[] args) {
 
         for (int i=0; i<2; i++) {
             System.out.println("*");
-            System.out.println(" ");
-        }
+                System.out.println(" ");
+            }
 
         for (int i=1; i<4; i++) {
             System.out.println("*");
@@ -18,6 +18,5 @@ public class Task6 {
                 System.out.println("**");
             }
         }
-
     }
 }
