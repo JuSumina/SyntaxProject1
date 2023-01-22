@@ -4,14 +4,16 @@ public class Arrays1 {
 
     public static void main(String[] args) {
 
-        int [] arr = {1,2,3,4,5};
+        int m = 2, total = 0;
 
-        for (int i=0; i < arr.length; i++) {
-            System.out.println(arr[i]);
+        while (m < 6) {
+
+            total = total + m;
+
+            m++;
+
         }
 
-        for (int number:arr) {
-            System.out.println(number);
-        }
+        System.out.print(total);
     }
 }
