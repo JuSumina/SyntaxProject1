@@ -1,6 +1,6 @@
 package homework9;
 
-public class Task6 {
+public class Task6a {
 
     public static void main(String[] args) {
 
@@ -11,19 +11,18 @@ public class Task6 {
                 {"Kenya", "Ghana", "Morocco", "Mali"},
         };
 
+        int allCountries = 0;
+
         for (int i = 0; i < countries.length; i++) {
-            for (int j = 0; j < countries[i].length; j++)
+            for (int j = 0; j < countries[i].length; j++) {
                 System.out.print(countries[i][j] + " ");
+                allCountries++;
+            }
             System.out.println();
         }
 
-        int allCountries = 0;
-
-        for (int i = 0; i<countries.length; i++) {
-                allCountries=allCountries+countries[i].length;
-
-            }
         System.out.println("The total number of countries printed above is "+allCountries);
+
 
 
     }
