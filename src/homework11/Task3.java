@@ -20,14 +20,14 @@ public class Task3 {
         String momNameHalf1=momName.substring(0,momName.length()/2);
         String dadNameHalf1=dadName.substring(0,dadName.length()/2);
 
-        String momNameHalf2=momName.substring(momName.length()/2,momName.length());
-        String dadNameHalf2=dadName.substring(dadName.length()/2,dadName.length());
+        String momNameHalf2=momName.substring(momName.length()/2);
+        String dadNameHalf2=dadName.substring(dadName.length()/2);
 
         if (babyGender.equalsIgnoreCase("girl")) {
-            System.out.println((momNameHalf1+dadNameHalf1).toUpperCase());
+            System.out.println((dadNameHalf1+momNameHalf2).toUpperCase());
 
         } else if (babyGender.equalsIgnoreCase("boy")) {
-            System.out.println((momNameHalf2+dadNameHalf2).toUpperCase());
+            System.out.println((momNameHalf1+dadNameHalf2).toUpperCase());
 
         }
 
