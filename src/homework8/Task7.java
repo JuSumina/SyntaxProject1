@@ -11,10 +11,10 @@ public class Task7 {
         int [] primeNumber = {1, 6, 7, 10, 17, 4, 41};
 
         for (int i=0; i < primeNumber.length; i++) {
-            if (primeNumber[i]%i==0 || primeNumber[i]<=1) {
-                System.out.println(primeNumber[i]+" is not a prime number");
-            } else {
+            if (primeNumber[i]>1 && primeNumber[i]%i!=0) {
                 System.out.println(primeNumber[i]+" is a prime number");
+            } else {
+                System.out.println(primeNumber[i]+" is not a prime number");
             }
         }
     }

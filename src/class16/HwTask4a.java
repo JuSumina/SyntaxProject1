@@ -1,6 +1,6 @@
-package homework12;
+package class16;
 
-public class Task4 {
+public class HwTask4a {
 
     public static void main(String[] args) {
 
@@ -13,7 +13,6 @@ public class Task4 {
             }
             System.out.print(" ");
         }
-
 
 
     }
