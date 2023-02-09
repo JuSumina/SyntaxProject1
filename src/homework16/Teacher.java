@@ -5,11 +5,11 @@ public class Teacher {
     String teacherName;
     int teacherId;
 
-    void teach() {
+    public void teach() {
         System.out.println("Every class out teacher teaches us something new");
     }
 
-    void giveHomework() {
+    protected void giveHomework() {
         System.out.println("Our teacher gives us homework");
     }
 
@@ -27,7 +27,7 @@ class MathTeacher extends Teacher {
 
     boolean hasRuler;
 
-    void mathOperations (){
+    public void mathOperations (){
         System.out.println("Math teacher teaches their students how to add, deduct, multiply and divide numbers");
     }
 }
