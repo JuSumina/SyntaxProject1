@@ -9,6 +9,12 @@ public class ComputerTest {
             computer.turnOn();
             computer.turnOff();
             computer.restart();
+
+            if (computer instanceof Apple) {
+                Apple apple=(Apple)computer;
+                apple.browser();
+            }
+
         }
     }
 }
