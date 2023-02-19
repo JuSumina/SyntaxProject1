@@ -1,7 +1,8 @@
 package class27;
 
 public class Car {
-    String make, model;
+    public String make;
+    String model;
     int year, horsePower;
 
     public Car (String make, String model) {
