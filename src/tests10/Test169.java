@@ -13,9 +13,13 @@ public class Test169 {
         a.add("yolo");
         a.add("boop");
 
+        a.remove(4);
+        a.remove(2);
+        a.remove(0);
 
-
-
+        for (String arr : a) {
+            System.out.print(arr + " ");
+        }
 
     }
 }

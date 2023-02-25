@@ -15,7 +15,7 @@ public class Task5 {
         }
 
 
-        numbers.removeIf(n -> (n / 5 == 0));
+        numbers.removeIf(n -> (n%5 == 0));
         System.out.println(numbers);
     }
 }
