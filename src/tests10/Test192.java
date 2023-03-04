@@ -1,8 +1,10 @@
 package tests10;
 
-import java.util.*;
+import java.util.HashMap;
+import java.util.LinkedHashMap;
+import java.util.Map;
 
-public class Test185 {
+public class Test192 {
     public static void main(String[] args) {
 
         Map<String, String> address = new LinkedHashMap<>();
@@ -12,10 +14,9 @@ public class Test185 {
         address.put("Zip","22180");
         address.put("Country","United State");
 
-        var iterator=address.entrySet().iterator();
-        while(iterator.hasNext()) {
-            var entry=iterator.next();
-            System.out.println(entry.getValue());
+        var entrySet=address.values();
+        for (var entry:entrySet) {
+            System.out.println(entry);
         }
     }
 }
